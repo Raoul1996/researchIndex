@@ -1,3 +1,13 @@
+/*这里是控制轮播图大小的地方*/
+#picbox{
+    margin: 0 auto;
+
+}
+#picbox{
+    width: 560px;
+    height: 300px;
+}
+
 h1{
     font-size: 2em;
 }
@@ -7,19 +17,17 @@ h1{
     margin: 0 auto;
     overflow: hidden;
 }
-#picbox{
-    margin: 0 auto;
 
-}
-#picbox{
-    width: 560px;
-    height: 300px;
-}
 .content,.solution{
     margin:1em auto 5em auto;
     text-align: center;
     /*width: inherit;*/
 
+}
+.solution{
+    margin:1em auto 1em auto;
+    text-align: center;
+    /*width: inherit;*/
 }
 .main h1,h3,h2,h5{
     /*margin-bottom: .5em;*/
@@ -92,7 +100,7 @@ h1{
 .solution li:hover{
     box-shadow: 2px 2px 20px #b5b5b5;
 }
-.solution li,.news li{
+.solution li,.news>ul>li{
     /*margin-top: 1em;*/
     padding: 10px;
     margin: 10px;
@@ -101,6 +109,15 @@ h1{
     display: inline-block;
     width: calc(25% - 2em);
 }
+.news>ul>li{
+     /*margin-top: 1em;*/
+     padding: 10px;
+     margin: 10px;
+     border-radius: .5em;
+     background-color: #fff;
+     /*display: inline-block;*/
+     /*width: calc(25% - 2em);*/
+ }
 .solution li img,.news li img{
     width: 100%;
 }
@@ -113,11 +130,106 @@ h1{
 }
 /*news*/
 .news{
-    width: inherit;
-    padding: 3em 0;
+    width: 85%;
+    min-width: 1000px;
+    padding: 2em 0;
+    margin: 0 auto;
     text-align: center;
     background-color: #FFFFFF;
 }
-.news li:first-child{
+.news h3{
+    font-size: 1.3em;
+    font-weight: normal;
+}
+.news>ul>li:first-child{
     width: 47.5%;
+    text-align: left;
+    margin-left: 4vw;
+}
+.news>ul>li:last-child{
+    width: 35%;
+}
+
+.lside a{
+    color: #183884;
+}
+.lside>div{
+    width: 100%;
+    margin-bottom: 2em;
+}
+.lside>div>div{
+    width: 16em;
+    height: 12em;
+    background-color: #00a2e6;
+}
+.lside img{
+    width: 100%;
+}
+.lside ul{
+    margin-left: 2em;
+    width: calc(100% - 18em);
+}
+.lside ul li{
+    width: 100%;
+}
+
+.lside p{
+    margin: 2em 0;
+    font-size: 0.8em;
+    line-height: 1.2em;
+}
+.lside button{
+    width: 10em;
+    text-align: center;
+    height: 2.5em;
+    background-color: transparent;
+    border: 1px #333 solid;
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+}
+.lside button:hover{
+    background-color: #183884;
+    color: white;
+}
+.rside{
+    text-align: left;
+    /*list-style: circle;*/
+}
+.rside li{
+    list-style: circle;
+    margin-left: 1em;
+    font-size: 1.1em;
+    line-height: 1.8em;
+    font-weight: normal;
+    /*list-style: ;*/
+}
+.rside a{
+    color: #333333;
+    text-decoration: #888888 dotted underline;
+}
+.rside a:hover{
+    color: #8e8e8e;;
+}
+.links{
+    text-align: center;
+}
+.links li{
+    display: inline-block;
+    margin: 0 2em ;
+}
+
+footer{
+    text-align: center;
+    width: 100%;
+    padding-top: 3em;
+    color: #FFFFFF;
+    background-color: #183884;
+    height: 8em;
+}
+footer li{
+    display: inline-block;
+    width: 33%;
+    height: 6em;
+    color: inherit;
 }
