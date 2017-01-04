@@ -3,21 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>科学教育研究中心相关页</title>
+    <title>科学教育研究中心首页</title>
     <!--实际发布到网站上使用CDN公共库加载文件-->
     <!--<link rel="stylesheet" href="https//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.css">-->
     <!--<script src="https://cdn.staticfile.org/jquery/1.11.1/jquery.js"></script>-->
     <!--项目开发阶段使用本地加载bootstrap&jquery-->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <!--<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">-->
     <script src="node_modules/jquery/dist/jquery.js"></script>
+    <!--<script src="//cdn.bootcss.com/jquery/1.11.0/jquery.js"></script>-->
     <!-------------------------------------------------->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/footer.css">
     <script src="js/myfocus-2.0.4.full.js"></script>
+    <style>
+        .content li{
+            width:3em;
+            /*height: 3em;*/
+            color: #333333;
+            padding: 0.2em;
+            font-size:2em;
+            text-align: center;
+            border-bottom: 2px transparent solid;
+
+        }
+        .content li:hover{
+            border-bottom: 2px #183884 solid;
+        }
+        .content ul{
+
+        }
+        .content a{
+            text-decoration: none;
+        }
+
+    </style>
 </head>
 <body>
-<div class="container">
+<div id="container">
     <header class="clearfix">
         <div class="logo">
             <div class="fl"><img src="images/logo.png" alt="logo"></div>
@@ -29,9 +52,9 @@
             </ul>
         </div>
         <nav class="">
-            <ul class=text-center">
-                <a href="#"><li>test</li></a>
-                <a href="#"><li>test</li></a>
+            <ul>
+                <a href="./index.html"><li>首页</li></a>
+                <a href="./about.html" ><li>关于</li></a>
                 <a href="#"><li>test</li></a>
                 <a href="#"><li>test</li></a>
                 <a href="#"><li>test</li></a>
@@ -40,12 +63,33 @@
             </ul>
         </nav>
     </header>
-    <div class="main">
+    <div class="content">
+        <div><img src="images/3-150P315010XK.jpg" alt="" width="100%"></div>
+        <div class="comwidth">
+            <ul class="clearfix">
+                <a href="#">
+                    <li class="fl">test</li>
+                </a>
+                <a href="#">
+                    <li class="fl">test</li>
+                </a>
+                <a href="#">
+                    <li class="fl">test</li>
+                </a>
+                <a href="#">
+                    <li class="fl">test</li>
+                </a>
 
-
-
-
-
+            </ul>
+            <hr>
+        </div>
+    </div>
+    <div class="pic">
+        <div class="pic1"><img src="images/test1.jpg" alt="" width="100%"></div>
+        <div class="pic2"><img src="images/test2.jpg" alt="" width="100%"></div>
+        <div class="pic3"><img src="images/test3.jpg" alt="" width="100%"></div>
+        <div class="pic4"><img src="images/test4.jpg" alt="" width="100%"></div>
+        <div class="pic5 comwidth"><img src="images/test5.jpg" alt="" width="100%"></div>
     </div>
     <footer>
         <ul>
@@ -56,8 +100,6 @@
         科学研究中心网页首页-----2016/12/11
     </footer>
 </div>
-<script>
-    myFocus.set({id: 'picbox'});
-</script>
+
 </body>
 </html>

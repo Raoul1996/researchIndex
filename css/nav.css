@@ -49,13 +49,13 @@ nav{
 }
 nav ul{
     background-color: inherit;
-    height: 3.2em;
+    height: 3.7em;
     /*margin: 0 auto;*/
 
 }
 nav a{
     height:inherit;
-    line-height: 2;
+    line-height: 2.5;
     display: block;
     width: calc(10% - 0.4em);
     /*padding: 0em;*/
