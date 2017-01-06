@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index-start</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<style type="text/css">
+		/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+		/* Author: Nicolas Hery - http://nicolashery.com */
+		/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+		/* Source: https://github.com/nicolahery/markdownpad-github */
+
+		/* RESET
+        =============================================================================*/
+
+		html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+			margin: 0;
+			padding: 0;
+			border: 0;
+		}
+
+		/* BODY
+        =============================================================================*/
+
+		body {
+			font-family: Helvetica, arial, freesans, clean, sans-serif;
+			font-size: 14px;
+			line-height: 1.6;
+			color: #333;
+			background-color: #fff;
+			padding: 20px;
+			max-width: 960px;
+			margin: 0 auto;
+		}
+
+		body>*:first-child {
+			margin-top: 0 !important;
+		}
+
+		body>*:last-child {
+			margin-bottom: 0 !important;
+		}
+
+		/* BLOCKS
+        =============================================================================*/
+
+		p, blockquote, ul, ol, dl, table, pre {
+			margin: 15px 0;
+		}
+
+		/* HEADERS
+        =============================================================================*/
+
+		h1, h2, h3, h4, h5, h6 {
+			margin: 20px 0 10px;
+			padding: 0;
+			font-weight: bold;
+			-webkit-font-smoothing: antialiased;
+		}
+
+		h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+			font-size: inherit;
+		}
+
+		h1 {
+			font-size: 28px;
+			color: #000;
+		}
+
+		h2 {
+			font-size: 24px;
+			border-bottom: 1px solid #ccc;
+			color: #000;
+		}
+
+		h3 {
+			font-size: 18px;
+		}
+
+		h4 {
+			font-size: 16px;
+		}
+
+		h5 {
+			font-size: 14px;
+		}
+
+		h6 {
+			color: #777;
+			font-size: 14px;
+		}
+
+		body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+			margin-top: 0;
+			padding-top: 0;
+		}
+
+		a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+			margin-top: 0;
+			padding-top: 0;
+		}
+
+		h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+			margin-top: 10px;
+		}
+
+		/* LINKS
+        =============================================================================*/
+
+		a {
+			color: #4183C4;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		/* LISTS
+        =============================================================================*/
+
+		ul, ol {
+			padding-left: 30px;
+		}
+
+		ul li > :first-child,
+		ol li > :first-child,
+		ul li ul:first-of-type,
+		ol li ol:first-of-type,
+		ul li ol:first-of-type,
+		ol li ul:first-of-type {
+			margin-top: 0px;
+		}
+
+		ul ul, ul ol, ol ol, ol ul {
+			margin-bottom: 0;
+		}
+
+		dl {
+			padding: 0;
+		}
+
+		dl dt {
+			font-size: 14px;
+			font-weight: bold;
+			font-style: italic;
+			padding: 0;
+			margin: 15px 0 5px;
+		}
+
+		dl dt:first-child {
+			padding: 0;
+		}
+
+		dl dt>:first-child {
+			margin-top: 0px;
+		}
+
+		dl dt>:last-child {
+			margin-bottom: 0px;
+		}
+
+		dl dd {
+			margin: 0 0 15px;
+			padding: 0 15px;
+		}
+
+		dl dd>:first-child {
+			margin-top: 0px;
+		}
+
+		dl dd>:last-child {
+			margin-bottom: 0px;
+		}
+
+		/* CODE
+        =============================================================================*/
+
+		pre, code, tt {
+			font-size: 12px;
+			font-family: Consolas, "Liberation Mono", Courier, monospace;
+		}
+
+		code, tt {
+			margin: 0 0px;
+			padding: 0px 0px;
+			white-space: nowrap;
+			border: 1px solid #eaeaea;
+			background-color: #f8f8f8;
+			border-radius: 3px;
+		}
+
+		pre>code {
+			margin: 0;
+			padding: 0;
+			white-space: pre;
+			border: none;
+			background: transparent;
+		}
+
+		pre {
+			background-color: #f8f8f8;
+			border: 1px solid #ccc;
+			font-size: 13px;
+			line-height: 19px;
+			overflow: auto;
+			padding: 6px 10px;
+			border-radius: 3px;
+		}
+
+		pre code, pre tt {
+			background-color: transparent;
+			border: none;
+		}
+
+		kbd {
+			-moz-border-bottom-colors: none;
+			-moz-border-left-colors: none;
+			-moz-border-right-colors: none;
+			-moz-border-top-colors: none;
+			background-color: #DDDDDD;
+			background-image: linear-gradient(#F1F1F1, #DDDDDD);
+			background-repeat: repeat-x;
+			border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+			border-image: none;
+			border-radius: 2px 2px 2px 2px;
+			border-style: solid;
+			border-width: 1px;
+			font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+			line-height: 10px;
+			padding: 1px 4px;
+		}
+
+		/* QUOTES
+        =============================================================================*/
+
+		blockquote {
+			border-left: 4px solid #DDD;
+			padding: 0 15px;
+			color: #777;
+		}
+
+		blockquote>:first-child {
+			margin-top: 0px;
+		}
+
+		blockquote>:last-child {
+			margin-bottom: 0px;
+		}
+
+		/* HORIZONTAL RULES
+        =============================================================================*/
+
+		hr {
+			clear: both;
+			margin: 15px 0;
+			height: 0px;
+			overflow: hidden;
+			border: none;
+			background: transparent;
+			border-bottom: 4px solid #ddd;
+			padding: 0;
+		}
+
+		/* TABLES
+        =============================================================================*/
+
+		table th {
+			font-weight: bold;
+		}
+
+		table th, table td {
+			border: 1px solid #ccc;
+			padding: 6px 13px;
+		}
+
+		table tr {
+			border-top: 1px solid #ccc;
+			background-color: #fff;
+		}
+
+		table tr:nth-child(2n) {
+			background-color: #f8f8f8;
+		}
+
+		/* IMAGES
+        =============================================================================*/
+
+		img {
+			max-width: 100%
+		}
+	</style>
+	<base href='file:\\\D:\github\researchIndex\'/>
+</head>
+<body>
+<h1>需要下载几个文件：</h1>
+<ol>
+	<li>
+		<p>系统镜像： </p>
+		<ol>
+			<li>
+				<p>gho系统镜像，自带激活工具，不需要打补丁：<a href="thunder://QUFodHRwOi8vZG93bi5uZXd4aXRvbmcubmV0OjgwMDEvMTcwMS9XaW43X3g4NmNfNy4xLkdIT1pa" title="迅雷链接，win7 32位">windows7 x86</a> 或者<a href="thunder://QUFodHRwOi8vZG93bi5uZXd4aXRvbmcubmV0OjgwMDEvMTcwMS9XaW43X3g2NGNfNy4xLkdIT1pa" title="迅雷链接，win7 64位">windows7 x64</a>选一个。</p>
+			</li>
+			<li>
+				<p><a href="https://itellyou.cn">Microsoft原版资源镜像站</a>上下载原版系统或者Microsoft资源。</p>
+			</li>
+		</ol>
+	</li>
+	<li>
+		<p>IT天空万能驱动：  <a href="http://download.itiankong.net/?name=wandrv6&amp;os=win7.x86&amp;ver=6.6.2016.0815" title="迅雷链接，win7 32位">万能驱动 Windows 7 32位（x86）</a> 或者<a href="http://download.itiankong.net/?name=wandrv6&amp;os=win7.x64&amp;ver=6.6.2016.0815" title="迅雷链接，win7 64位"> 万能驱动 Windows 7 64位（x64）</a>选一个，但是要和系统的位数对应，意思就是如果系统是x86的，这个也要选x86。还有，这个是备用的，防止新系统没有网卡驱动，不能上网。理论上上面的镜像里边已经集成了万能驱动助理了，如果使用原版系统进行安装，这项是必须的。</p>
+	</li>
+	<li>
+		<p>启动U盘制作工具。</p>
+		<ol>
+			<li><a href="http://www.dabaicai.com/down_135.html">大白菜大白菜U盘启动制作工具V5.2二合一版</a></li>
+		</ol>
+	</li>
+</ol>
+<h1>安装过程</h1>
+<h3>可以先看看<a href="http://www.dabaicai.com/down_135.html">这个页面</a>里的操作步骤</h3>
+<ol>
+	<li>制作系统U盘，然后把C盘需要备份的东西都移动到别的地方，重要的东西最好不要放在硬盘里了，防止操作失误导致不必要的损失。</li>
+	<li>将系统镜像放到非系统分区，不必要将系统放到U盘。</li>
+	<li>
+		<p>重启系统，进入pe系统（就是装机工具放到U盘里的那个）。<strong>不同的品牌的电脑进入bios和更改启动序列的方法是不同的，可以搜一下</strong></p>
+		<ul>
+			<li>例如：<em>联想拯救者 bios</em>或者<em>dell 游匣 bios</em></li>
+		</ul>
+	</li>
+	<li>
+		<p>然后就是大白菜的那个页面里的步骤了。</p>
+	</li>
+</ol>
+<h1>NOTICE</h1>
+<p>安装系统的过程中，不要断电。不要强行终止。出了问题的话，老师随时可以叫我呀~~</p>
+<h3>就酱，祝成功~~~~</h3>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
