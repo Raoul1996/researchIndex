@@ -26,18 +26,15 @@ header{
     padding-right:0.5em ;
     /*max-width: 100%;*/
 }
-.logo li{
-    /*background-color: #0f0f0f;*/
-    border: 1px solid black;
-    border-radius: 50%;
-    margin-top:4em ;
-    margin-left:2em;
-    width: 2em;
-    height: 2em;
-}
-.logo li:first-child{
-    margin-right: 3em;
-}
+/*.logo li{*/
+    /*!*background-color: #0f0f0f;*!*/
+    /*border: 1px solid black;*/
+    /*border-radius: 50%;*/
+    /*margin-top:4em ;*/
+    /*margin-left:2em;*/
+    /*width: 2em;*/
+    /*height: 2em;*/
+/*}*/
 /*navigator*/
 
 nav{
