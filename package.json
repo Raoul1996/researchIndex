@@ -1,0 +1,28 @@
+{
+  "name": "res",
+  "version": "1.0.0",
+  "description": "NEUQ科学教育中心首页",
+  "main": "index.html",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "jquery": "^1.11.1",
+    "bootstrap": "^3.3.7",
+    "angular": "^1.5.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raoul1996/researchIndex.git"
+  },
+  "author": "raoul",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Raoul1996/researchIndex/issues"
+  },
+  "homepage": "https://github.com/Raoul1996/researchIndex#readme"
+}

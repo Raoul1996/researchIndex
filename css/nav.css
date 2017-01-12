@@ -46,8 +46,8 @@ nav{
 }
 nav ul{
     background-color: inherit;
-    height: 3.7em;
-    /*margin: 0 auto;*/
+    height: 2.5em;
+
 
 }
 nav a{
@@ -70,5 +70,5 @@ nav a:hover{
     background-color: #081d4d;
 }
 nav li{
-    font-size: 1.5em;
+    /*font-size: 1.5em;*/
 }

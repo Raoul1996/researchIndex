@@ -440,7 +440,7 @@
 					p.xmlFile&&F.loadXML(p);
 					p.pic=$class('pic',$o[0])[0];//保存node for是否标准风格的判断及是否需要initcss
 					p.width=p.width||$o.css('width'),p.height=p.height||$o.css('height');//获得box高/宽
-					F.initCSS(p,oStyle);//css
+					F.initCSS(p,oStyle);//j-css
 					$o.addClass(p.pattern+' '+p.__clsName);//+className
 					F.getIMGReady(p,function(arrSize){
 						if(p.autoZoom) F.zoomIMG(p,arrSize);//缩放图片
@@ -536,7 +536,7 @@
 		},
 		initBaseCSS:function(id){
 			var s='#'+id+' *{display:none}',oStyle=document.createElement('style');
-			oStyle.type='text/css';
+			oStyle.type='text/j-css';
 			try{oStyle.styleSheet.cssText=s}catch(e){oStyle.innerHTML=s}
 			var oHead = $tag('head',document)[0];
 			oHead.insertBefore(oStyle,oHead.firstChild);
